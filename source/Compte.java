@@ -1,12 +1,12 @@
 public class Compte {
     // Attributs
-    private int solde = 0;
     private String nom;
+    private int solde = 0;
+    
 
     // Constructeur
-    public Compte(String nom, int solde) {
+    public Compte(String nom) {
         this.nom = nom;
-        this.solde = solde;
     }
 
     // Méthodes

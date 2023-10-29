@@ -1,7 +1,7 @@
 public class TesteCompte {
     public static void main(String[] args) {
-        Compte compte1 = new Compte("Jean", 1000);
-        Compte compte2 = new Compte("Pierre", 500);
+        Compte compte1 = new Compte("Jean");
+        Compte compte2 = new Compte("Pierre");
         compte1.deposer(500);
         compte2.deposer(1000);
         compte2.retirer(10);
@@ -12,7 +12,7 @@ public class TesteCompte {
         //Question 3 :
         Compte[] comptes = new Compte[10];
         for (int i = 0; i < 10; i++) {
-            comptes[i] = new Compte("Compte " + (i+1), 0);
+            comptes[i] = new Compte("Compte " + (i+1));
         }
         //Déposer 200 euros plus une somme égale à 100 fois l'indice du compte
         for (int i = 0; i < comptes.length; i++) {
